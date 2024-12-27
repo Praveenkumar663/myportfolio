@@ -5,9 +5,11 @@
 html{
     scroll-behavior: smooth;
     overflow-x: hidden;
+    
 }
 body{
-    background-color: #e9e9ec;   
+    background-color: #e9e9ec;  
+    font-family: "Arial", sans-serif; 
 }
 .navbar{
     cursor: pointer;
@@ -26,33 +28,38 @@ body{
      color:#00ffff;
      
 }
+.navbar-nav{
+    background: rgb(4,4,48);
+}
 
+.navbar{
+    background: rgb(4,4,48);
+}
 
 @media (min-width:256px){
     .nav-link{
         text-align: center;
     }
-    .navbar{
-        background: rgb(4,4,48);
-    }
-    .navbar-nav{
-        /* background-color: rgb(0, 0, 20); */
-        background: rgb(4,4,48);
-    }
+   
 }
 
-@media(min-width:960px){
+/* @media(min-width:960px){
     .nav-link{
         text-align: center;
     }
-    .navbar{
-        /* background:rgb(15, 14, 63) */
-        background: rgb(4, 4, 48);
-    }
-    .navbar-nav{
-        background: rgb(4,4,48);
-    }
-}
+    
+} */
+
+.btn-close {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-top: -40px;
+    
+
+} 
+
+
 
 /* -----------------------home---------------- */
 .home{
@@ -130,7 +137,7 @@ hr{
     justify-content: space-between;
     display: flex;
     align-items: center;
-    padding: 70px 10% 20px;
+    padding: 70px 10% 10px;
 }
  .button{
     /* align-items: center;
@@ -214,9 +221,8 @@ textarea{
     padding: 70px 5% 20px;
 }
 .about-image{
-width: 250px;
-height: 450px;
-/* padding: 10px 10px 0 10px; */
+width: 300px;
+height: 500px;
 box-shadow: 0 0 5px rgba(3, 52, 156, 0.836),0 0 25px rgba(3, 52, 156, 0.836),0 0 50px rgba(3, 52, 156, 0.836) ;
 border: 1px solid rgba(3, 52, 156, 0.836);
 }
@@ -259,20 +265,24 @@ border: 1px solid rgba(3, 52, 156, 0.836);
 
 
 
-@media (min-width:256px){
+ @media (min-width:256px){
     .about-image{
-         margin: 5px 80px ;  
-    }
+        align-items: center;
+        justify-content: center; 
+        margin: auto;
+        display: flex;
+   }
    
-}
+} 
 @media(max-width:540px) {
   
     .about-paragraph{
         text-align: justify;
     }
-    /* .education{
-        margin-left: -5px;
-    } */
+     .about-image{
+        width: 235px;
+        height: 400px;
+   } 
 }
 
 
@@ -475,8 +485,13 @@ border: 1px solid rgba(3, 52, 156, 0.836);
 }
 
 /* --------------footer--- */
-.footer{
-    background-color: #01013d;
-    color: rgb(216, 216, 216);
+.footer {
+    background-color: #01013d; /* Dark background */
+    color: #f7f7f7; /* Light text for contrast */
+    font-family: "Arial", sans-serif; /* Clean font */
+    margin-bottom: -10px;
+    padding-top: 10px;
     
-}
+    
+  }
+  

@@ -13,27 +13,58 @@
 </head>
 <body>
    
-<!-- navbar -->
- <div class="navbar navbar-expand-sm  container-fluid sticky-top  " >
-  <div class="navbrand ps-2">
-     <h2> PORTFOLIO</h2>
+<!-- Navbar -->
+<div class="navbar navbar-expand-sm container-fluid sticky-top">
+    <div class="navbrand ps-2">
+      <h2>PORTFOLIO</h2>
+    </div>
+  
+    <!-- Toggle Button -->
+    <button
+      type="button"
+      id="toggleButton"
+      class="btn navbar-toggler"
+      data-bs-toggle="collapse"
+      data-bs-target="#box"
+    >
+      <span>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="30px"
+          viewBox="0 -960 960 960"
+          width="30px"
+          fill="white"
+        >
+          <path
+            d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+          />
+        </svg>
+      </span>
+    </button>
+  
+    <!-- Nav Items -->
+    <div class="collapse navbar-collapse" id="box">
+      <!-- Close Button -->
+      <button id="closeButton" class="btn btn-close  ms-auto d-block d-sm-none">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="height: 30px;width:30px;fill:rgb(243, 243, 243);"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+      </button>
+      <ul class="navbar-nav ms-auto nav-underline">
+        <li class="nav-item">
+          <a href="#home" class="nav-link act">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a href="#skill" class="nav-link">SKILL</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">CONTACT</a>
+        </li>
+      </ul>
+    </div>
   </div>
-  <!-- buttons -->
-   <button type="button" class=" btn navbar-toggler" data-bs-toggle="collapse" data-bs-target="#box">
-    <span> 
-        <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="white"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
-    </span>
-   </button>
-   <div class="collapse navbar-collapse" id="box">
-  <!-- nav-items -->
-  <ul class="navbar-nav ms-auto nav-underline" >
-    <li class="nav-item "><a href="#home" class="nav-link act ">HOME</a></li>
-    <li class="nav-item"><a href="#about" class="nav-link">ABOUT</a></li>
-    <li class="nav-item"><a href="#skill" class="nav-link">SKILL</a></li>
-    <li class="nav-item"><a href="#contact" class="nav-link">CONTACT</a></li>
-  </ul>
-</div>
- </div>
+   </div>
  <div class="home" id="home"> 
 <!-- home section -->
 <div class="container-fluid" >
@@ -309,7 +340,7 @@
  <div class="contact" id="contact">
    <div class="container-fluid" >
     <div class="row">
-        <div class="col-sm-12 col-lg-4 col-md-10 ">
+          <div class="col-sm-12 col-lg-4 col-md-10 ">
           <h1 class="text-light fw-bold c1">Contact <span class="me">Me</span></h1>
            <div class="span1 mt-4 text-light fw-3 p-2 d-flex">
               <svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#00ffff"><path d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"/></svg>
@@ -341,8 +372,8 @@
             </a>
           </div>
           
-        </div>
-        <div class=" col-lg-8 col-md-10 col-sm-12">
+          </div>
+         <div class=" col-lg-8 col-md-10 col-sm-12">
                  <form name="submit-to-google-sheet">
                     <div class="form-floating ">
                         <input type="text" class="form-control" placeholder="Enter your Name" id="name" name="Name" required>
@@ -362,29 +393,43 @@
                      </div>
                  </form>
                  <span id="msg"></span>
-        </div>
+         </div>
     </div>
+    <div class=" row footer ">
+        <div class="container-fluid text-center">
+          <p class=" fs-5">
+            Designed and developed with ❤️ by <strong>Praveenkumar</strong>
+          </p>
+        </div>
+      </div>
+      
     </div>
 </div>
 
 <!-- --------------------contact end----------------- -->
 
-<!-- ---------------footer----------------- -->
-<!-- <div class="row footer">
-    <div class="col-sm-12 col-md-12 col-lg-12">
-        <div >
-            <center>
-            <p class="  fs-5 fw-4">Developed with loved by PRAVEENKUMAR</p>
-        </center>
-        </div>
-    </div>
- </div> -->
+
  
 
 
 
 <script>
+ //  home-toggle button
+ // Select elements
+const toggleButton = document.getElementById("toggleButton");
+const closeButton = document.getElementById("closeButton");
+const navMenu = document.getElementById("box");
 
+// When toggle button is clicked
+toggleButton.addEventListener("click", () => {
+  toggleButton.style.display = "none"; // Hide the toggle button
+});
+
+// When close button is clicked
+closeButton.addEventListener("click", () => {
+  toggleButton.style.display = "block"; // Show the toggle button
+  navMenu.classList.remove("show"); // Collapse the menu
+});
 
 
     //   content page 
