@@ -5,7 +5,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PORTFOLIO</title>
+    <title>Praveenkumar</title>
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="icon" href="images/portfolio.png">
     <link rel="stylesheet" href="styles.css">
@@ -46,11 +46,11 @@
     <div class="collapse navbar-collapse" id="box">
       <!-- Close Button -->
       <button id="closeButton" class="btn btn-close  ms-auto d-block d-sm-none">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="height: 30px;width:30px;fill:rgb(243, 243, 243);"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" style="height: 30px;width:30px; "><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/></svg>
       </button>
       <ul class="navbar-nav ms-auto nav-underline">
         <li class="nav-item">
-          <a href="#home" class="nav-link act">HOME</a>
+          <a href="#home" class="nav-link ">HOME</a>
         </li>
         <li class="nav-item">
           <a href="#about" class="nav-link">ABOUT</a>
@@ -65,9 +65,9 @@
     </div>
   </div>
    </div>
- <div class="home" id="home"> 
+ 
 <!-- home section -->
-<div class="container-fluid" >
+<div class="container-fluid home"  id="home">
     <div class="row home-row my-2">
         <div class="col-sm-12 col-lg-7 col-md-12">
             <span class="h4 text-light p-2 mb-4">Hello It's Me</span>  
@@ -76,7 +76,7 @@
            
             <span class="h4 text-light">And I'm a Freelancer</span> <hr>
                 <div >
-                     <p  class="fs-5 text-light ms-1   p-2 fw-3">I'm a passionate and aspiring web developer with a keen interset in creating beautiful,
+                     <p  class="fs-5 text-light ms-1   p-2 fw-3">I'm a passionate and  web developer with a keen interset in creating beautiful,
                     responsive, and user-friendly websites.
                     </p>
                  </div>
@@ -100,22 +100,25 @@
                 <!-- -------------------resume------------ -->
                 <div class="resume  my-5 ms-5 ">
                     <a href="images/myresume.pdf" download
-                       class="text-decoration-none home-resume button  contact-button p-2  px-3   fw-bold" 
+                       class="text-decoration-none home-resume button  contact-button py-3  px-3   fw-bold" 
                        download="images/myresume.pdf">
-                       My Resume
+                       Download CV
                     </a>
                   </div>
         </div>
 
-
-        <div class="col-sm-12 col-lg-5 col-md-12 img ">
-            
-            <img src="images/home-pic.png" alt="img.jpg" class="img-fluid  home-img">
-            
+        <div class="boxmain">
+             <div class="box1main"></div>
+             <div class="col-sm-12 col-lg-5 col-md-12  box2main ">
+                 <img src="images/home-pic.jpg" alt="img.jpg" class="img-fluid  home-img"> 
+                 
+            </div>
         </div>
+
+
     </div>
 </div>
-</div>
+
 <!-- end of top -->
  <!-- ------------------new about------------------------------ -->
   <div class="container-fluid about" id="about">
@@ -140,7 +143,7 @@
                 <div class="about-title">
                     <h3 class="tab education-tab active-tab" onclick="showTab('education', this)">Education</h3>
                     <h3 class="tab experience-tab" onclick="showTab('experience', this)">Experience</h3>
-                    <h3 class="tab certificate-tab" onclick="showTab('certificate', this)">Certificates</h3>
+                    <!-- <h3 class="tab certificate-tab" onclick="showTab('certificate', this)">Certificates</h3> -->
                 </div>
             
                 <div id="education" class="tab-content active">
@@ -173,7 +176,7 @@
                     </div>
                 </div>
             
-                <div id="certificate" class="tab-content" style="display: none;">
+                <!-- <div id="certificate" class="tab-content" style="display: none;">
                     <div class="col-12 my-5">
                     <span class="h5 my-5 ms-2 degree fs-4 fw-1"> PGDCA  </span>
                     <span class="h5 my-5 mt-5">- Postgraduate In Diploma Computer Application</span>
@@ -181,7 +184,7 @@
                 <div class="col-12 my-5">
                     <span class="  h5 my-5 ms-2  degree fs-4 fw-1"> ADPP   </span>
                     <span class="h5 my-5 mt-5">- Advanced Diploma In Python Programming</span>
-                </div>
+                </div> -->
                 
                 </div>
             </div>
@@ -364,14 +367,13 @@
                  </svg></a>
                  
            </div>
-           <div class="resume  my-5 ms-5 ">
-            <a href="images/myresume.pdf" download
-               class="text-decoration-none  button  contact-button p-2  px-3   fw-bold" 
-               download="images/myresume.pdf">
-               My Resume
-            </a>
-          </div>
-          
+                 <div class="resume  my-5 ms-5 ">
+                     <a href="images/myresume.pdf" download
+                        class="text-decoration-none  button  contact-button py-3  px-3   fw-bold">
+                                      My Resume
+                     </a>
+                   </div> 
+
           </div>
          <div class=" col-lg-8 col-md-10 col-sm-12">
                  <form name="submit-to-google-sheet">
@@ -395,18 +397,21 @@
                  <span id="msg"></span>
          </div>
     </div>
-    <div class=" row footer ">
-        <div class="container-fluid text-center">
-          <p class=" fs-5">
-            Designed and developed with ❤️ by <strong>Praveenkumar</strong>
-          </p>
-        </div>
-      </div>
-      
+  
     </div>
 </div>
 
 <!-- --------------------contact end----------------- -->
+
+<!-- ---footer--- -->
+<div class=" row footer ">
+  <div class="container-fluid text-center">
+    <p>
+      Copyright © 2025 <strong>Praveenkumar </strong> .
+      <span class="fp"> All rights reserved. </span>
+    </p>
+  </div>
+</div>
 
 
  
@@ -423,12 +428,14 @@ const navMenu = document.getElementById("box");
 // When toggle button is clicked
 toggleButton.addEventListener("click", () => {
   toggleButton.style.display = "none"; // Hide the toggle button
+  closeButton.style.fill="cyan";
 });
 
 // When close button is clicked
 closeButton.addEventListener("click", () => {
   toggleButton.style.display = "block"; // Show the toggle button
   navMenu.classList.remove("show"); // Collapse the menu
+
 });
 
 
